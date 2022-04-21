@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>All About Images · Managing Assets for the Web</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name=“handheldfriendly” content=“true”>
+  <meta name=“mobileoptimized” content=“true”>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-196.png">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Managing Web Graphics</h1>
+    <p>A crash course in image optimization options.</p>
+  </header>
+  
+  <main>
+    <!-- This is a comment-->
+    <section>
+      <h2>There are 4 basic options for exporting images: </h2>
+      <div class="wrapper">
+        <figure id="1">
+          <img class="img-flex" src="images/psd-standard-default.jpg" alt="">
+          <figcaption>
+            <h3>Standard (default export)</h3>
+            <p>Image size: 284 KB</p>
+          </figcaption>
+        </figure>
+        <figure id="2">
+          <img class="img-flex" src="images/psd-standard-optimized.jpg" alt="">
+          <figcaption>
+            <h3>Standard (web optimized)</h3>
+            <p>Image size: 168 KB</p>
+          </figcaption>
+        </figure>
+        <figure id="3">
+          <img class="img-flex" src="images/psd-retina-default.jpg" alt="">
+          <figcaption>
+            <h3>Retina (default export)</h3>
+            <p>Image size: 819 KB</p>
+          </figcaption>
+        </figure>
+        <figure id="4">
+          <img class="img-flex" src="images/psd-retina-optimized.jpg" alt="">
+          <figcaption>
+            <h3>Retina (web optimized)</h3>
+            <p>Image size: 264 KB</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="summary">
+        <h4>Important takeaways:</h4>
+          <ol>
+            <li>Doubling the number of pixels in an image, and then putting it in a container (aka making a retina image), drastically increases the quality of the image, especially on higher quality screens; and</li>
+            <li>Image optimizations, no matter how good, still impact the images. For example, in this case, you'll see saturation was impacted noticeably.</li>
+          </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>All of the previous images were exported in Photoshop; but you also have the option of exporting images from Sketch (@1x , @2x etc.):</h2>
+      <div class="wrapper">
+        <figure id="5">
+          <img class="img-flex" src="images/psd-standard-default.jpg" alt="">
+          <figcaption>
+            <h3>Photoshop Standard (default export)</h3>
+            <p>Image size: 284 KB</p>
+          </figcaption>
+        </figure>
+        <figure id="6">
+          <img class="img-flex" src="images/sketch-standard-default.jpg" alt="">
+          <figcaption>
+            <h3>Sketch Standard (JPG @1x)</h3>
+            <p>Image size: 344 KB</p>
+          </figcaption>
+        </figure>
+        <figure id="7">
+          <img class="img-flex" src="images/psd-retina-default.jpg" alt="">
+          <figcaption>
+            <h3>Photoshop Retina (default export)</h3>
+            <p>Image size: 819 KB</p>
+          </figcaption>
+        </figure>
+        <figure id="8">
+          <img class="img-flex" src="images/sketch-retina-default.jpg" alt="">
+          <figcaption>
+            <h3>Sketch Retina (JPG @2x)</h3>
+            <p>Image size: 1.2 MB</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="summary">
+        <h4>Important takeaways:</h4>
+          <ol>
+            <li>Sketch isn't built to process images, so the quality of its image exports isn't as good as Photoshop, even with the same number of pixels. Take note of the file sizes too! Overall, this isn't a competitive practice for web design.</li>
+          </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>One optimization for Sketch exports is rounding assets to the nearest pixel (Arrange > Round to Nearest Pixel):</h2>
+      <div class="wrapper">
+        <figure id="9">
+          <img class="img-flex" src="images/sketch-standard-default.jpg" alt="">
+          <figcaption>
+            <h3>Sketch Standard — Rounded (JPG @1x)</h3>
+            <p>Image size: 344 KB</p>
+          </figcaption>
+        </figure>
+        <figure id="10">
+          <img src="images/sketch-standard-norounding.jpg" alt="">
+          <figcaption>
+            <h3>Sketch Standard — No Rounding (JPG @1x)</h3>
+            <p>Image size: 347 KB</p>
+          </figcaption>
+        </figure>
+
+        <figure id="12">
+          <img class="img-flex" src="images/rounded.jpg" alt="">
+          <figcaption>
+            <h3>Sketch Standard — Rounded (JPG @1x)</h3>
+            <p>Image size:  KB</p>
+          </figcaption>
+        </figure>
+        <figure id="13">
+          <img src="images/norounding.jpg" alt="">
+          <figcaption>
+            <h3>Sketch Standard — No Rounding (JPG @1x)</h3>
+            <p>Image size:  KB</p>
+          </figcaption>
+        </figure>
+        <figure id="14">
+          <img class="img-flex" src="images/rounded-retina.jpg" alt="">
+          <figcaption>
+            <h3>Sketch Retina — Rounded (JPG @1x)</h3>
+            <p>Image size:  KB</p>
+          </figcaption>
+        </figure>
+        <figure id="15">
+          <img class="img-flex" src="images/norounding-retina.jpg" alt="">
+          <figcaption>
+            <h3>Sketch Retina — No Rounding (JPG @1x)</h3>
+            <p>Image size:  KB</p>
+          </figcaption>
+        </figure>
+
+        <figure id="16">
+          <img class="img-flex" src="images/icons-rounded.svg" alt="">
+          <figcaption>
+            <h3>Sketch Icons — Rounded (SVG)</h3>
+          </figcaption>
+        </figure>
+        <figure id="17">
+          <img class="img-flex" src="images/icons-norounding.svg" alt="">
+          <figcaption>
+            <h3>Sketch Icons — No Rounding (SVG)</h3>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="summary">
+        <h4>Important takeaways:</h4>
+          <ol>
+            <li>The impacts of rounding raster graphics varies, but is still quite minimal, and will not compete with retina image quality; and,</li>
+            <li>If you round vector graphics (ex. icons) to the nearest pixel, you'll break them. Therefore, it is NOT suggested to select an entire Sketch file and round.</li>
+          </ol>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p><small>Brought to you by MacKenzie · 2022</small></p>
+  </footer>
+</body>
+</html>
